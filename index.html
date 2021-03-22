@@ -1,0 +1,45 @@
+<html>
+ <head>
+  <title> Users Application </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <body>
+        <div id="frm" class="loginbox">
+        <h1>User Login</h1>
+        <form name="f1" action="authentication.php" onsubmit="return validation()" method="POST">
+            <p>Username</p>
+            <input type="text" id="user" name="user" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" id="pass" name="pass" placeholder="Enter password">
+            <input type="submit" id="btn" name="" value="Login" >
+            <a href="#">Forgot Password</a> <br> 
+            <a href="register.html">Sign up New Account</a> 
+            
+        </form>
+        </div>
+
+        
+        <script>
+            function validation()
+            {
+                var id=f1.user.value;
+                var ps=f1.pass.value;
+                if(id.length=="" && ps.length==""){
+                    alert("Enter username and password");
+                    return false;
+                }
+                else
+                {
+                    if(id.length==""){
+                        alert("Please enter username");
+                        return false
+                             }
+                    if(ps.length==""){
+                        alert("Please enter Password");
+                        return false
+                    }
+                }
+            }
+        </script>
+    </body>
+ </head>
+</html>
