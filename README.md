@@ -6,9 +6,9 @@
  Registered users can see ,edit and delete all users in the database.
 
 ---
-##Contributors
-
+## Contributors
 Lesetja A Sekhwibidu <lesetja.las@gmail.com>
+
 ---
 ## Licence & copyright
 ©Lesetja A Sekhwibidu, Software Developer
