@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <body>
+            <div id="frm" class="loginbox">
+            <h1>Registration form</h1>
+            <form name="f1" action="process.php" onsubmit="return validation()" method="POST">
+                <p>Full Names</p>
+                <input type="text" id="names" name="names" placeholder="Enter Full names">
+                <p>Username</p>
+                <input type="text" id="username" name="username" placeholder="Enter username">
+                <p>Password</p>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+                <p>Confirm Password</p>
+                <input type="password" id="cpass" name="cpass" placeholder="Confirm password">
+                <input type="submit" id="btn2" name="btn2" value="Register">
+            </form>
+        </div>
+
+        <script>
+            function validation()
+            {
+                var id1=f1.names.value;
+                var id2=f1.username.value;
+                var id3=f1.pass.value;
+                var id4=f1.cpass.value;
+                if(id1.length=="" && id2.length=="" && id3.length=="" && id4.length==""){
+                    alert("Enter All fields");
+                    return false;
+                }
+                else
+                {
+                    if(id1.length==""){
+                        alert("Please enter Full names");
+                        return false
+                             }
+                    if(id2.length==""){
+                        alert("Please enter Username");
+                        return false
+                    }
+
+                    
+                    if(id3.length==""){
+                        alert("Please enter Password");
+                        return false
+                    }
+                    
+                    if(id4.length==""){
+                        alert("Please Cornfim Password");
+                        return false
+                    }
+                }
+            }
+        </script>
+
+        </body>
+    </head>
+</html>
