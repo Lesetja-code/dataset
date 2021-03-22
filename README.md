@@ -8,7 +8,7 @@
 ---
 ##Contributors
 
--Lesetja A Sekhwibidu <lesetja.las@gmail.com
+Lesetja A Sekhwibidu <lesetja.las@gmail.com>
 ---
 ## Licence & copyright
 ©Lesetja A Sekhwibidu, Software Developer
